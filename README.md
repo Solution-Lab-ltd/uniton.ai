@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo.svg" alt="Uniton.ai flame logo" width="140">
+  <img src="docs/assets/uniton.png" alt="Uniton.ai flame logo" width="140">
 </p>
 
 # Uniton.ai
