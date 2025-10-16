@@ -5,54 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uniton.ai — Discontinued</title>
     <style>
-      :root {
-        color-scheme: light dark;
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #0b1020;
-        color: #f2f5ff;
-      }
-
       body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(120% 120% at 50% 0%, #152044 0%, #060b1a 52%, #04060d 100%);
+        color: #f5f7ff;
         margin: 0;
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 3rem 1.5rem;
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 20% 5% auto;
+        height: min(420px, 55vh);
+        background: radial-gradient(50% 80% at 50% 0%, rgba(42, 69, 175, 0.35), transparent 70%);
+        filter: blur(20px);
+        z-index: 0;
       }
 
       main {
+        position: relative;
         max-width: 640px;
         width: 100%;
         text-align: center;
-        background: rgba(9, 17, 35, 0.65);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 20px;
-        padding: 2.75rem 2.25rem;
-        box-shadow: 0 28px 80px rgba(20, 43, 121, 0.35);
-        backdrop-filter: blur(14px);
+        background: linear-gradient(160deg, rgba(20, 31, 55, 0.92), rgba(8, 12, 26, 0.92));
+        border: 1px solid rgba(121, 140, 255, 0.18);
+        border-radius: 24px;
+        padding: 3.25rem 2.75rem;
+        box-shadow:
+          0 24px 80px rgba(9, 18, 40, 0.75),
+          0 1px 0 rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(16px);
+        z-index: 1;
       }
 
       main h1 {
         font-size: clamp(2rem, 4.2vw, 3rem);
         margin: 1.5rem 0 1rem;
         letter-spacing: -0.02em;
+        color: #f8fbff;
       }
 
       main p {
         font-size: 1.05rem;
         line-height: 1.65;
         margin: 0 0 1.5rem;
-        color: rgba(242, 245, 255, 0.85);
+        color: rgba(233, 238, 255, 0.78);
       }
 
       .status {
         display: inline-block;
         padding: 0.35rem 0.85rem;
         border-radius: 999px;
-        background: rgba(255, 71, 87, 0.18);
-        border: 1px solid rgba(255, 108, 122, 0.4);
-        color: #ff6c7a;
+        background: rgba(180, 60, 74, 0.2);
+        border: 1px solid rgba(215, 91, 105, 0.55);
+        color: #f27986;
         font-weight: 600;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -62,12 +74,12 @@
 
       footer {
         font-size: 0.85rem;
-        color: rgba(242, 245, 255, 0.6);
+        color: rgba(210, 222, 255, 0.55);
         margin-top: 2rem;
       }
 
       img {
-        width: 140px;
+        width: 128px;
         aspect-ratio: 1;
       }
     </style>
